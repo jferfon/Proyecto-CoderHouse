@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <title>Contactenos</title>
+</head>
+
+<body>
+  <header>
+    <div class="encabezado">
+      <a href="../index.html"><img class="encabezado-logo" src="../assets/img/Logo_eDrinks.png" alt="Logo Edrinks"></a>
+      <nav class="nav-menu">
+        <ul>
+          <li class="nav-menu__item"><a class="nav-menu__item__link" href="../index.html">Inicio</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item__link" href="quienesSomos.html">Quienes
+              Somos</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item__link" href="promociones.html">Promos</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item__link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__item__link nav-color" href="contactanos.html">Contactenos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <form action="/my-handling-form-page" method="post">
+        <div class="formulario">
+          <div>
+            <input class="formulario__item" type="text" name="nombre" placeholder="Nombre:" required />
+            <input class="formulario__item" type="number" name="Telefono" placeholder="Teléfono:" />
+            <input class="formulario__item" type="email" name="mail" placeholder="Mail:" required />
+            <input class="formulario__item" type="text" name="asunto" placeholder="Asunto:" required />
+            <textarea class="formulario__item-mensaje" type="text" name="mensaje" placeholder="Mensaje:"
+              required /></textarea>
+          </div>
+        </div>
+
+        <div class="form-boton">
+          <input class="form-boton__item" class="formulario__boton" type="submit" value="Enviar formulario" />
+          <input class="form-boton__item" type="reset" value="Limpiar formulario" />
+          <input class="form-boton__item" type="button" value="Enviar" />
+        </div>
+      </form>
+
+      <div class="mapa">
+        <!--Mapa----------------------------------------------------------------------------------------------------------------------->
+        <iframe width="477" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?width=477&amp;height=200&amp;hl=en&amp;q=Roque%20Grasera%20848%20Montevideo+(Distribuidora%20Edrinks)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <a href='https://www.symptoma.es/'>symptom checker español</a>
+        <script type='text/javascript'
+          src='https://embedmaps.com/google-maps-authorization/script.js?id=d31139ee960d1b6aa8145e504a83b822a8cd5af5'></script>
+        <!---------------------------------------------------------------------------------------------------------------------------------->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="pie">
+      <h3>Somos una distribuidora mayorista de bebidas alcohólicas de productos importados y nacionales.</h3>
+      <div class="pie__contenedor">
+        <div class="pie__contenedor__item"><img src="../assets/img/logo_dir.png" alt="Direccion"></div>
+        <div class="pie__contenedor__item">
+          <h4>&nbsp Dirección: Roque Graseras 848, 11600 Montevideo &nbsp</h4>
+        </div>
+        <div class="pie__contenedor__item"><img src="../assets/img/logo_cel.png" alt="Celular"></div>
+        <div class="pie__contenedor__item">
+          <h4>&nbsp Celular: 093 305 875 &nbsp</h4>
+        </div>
+        <div class="pie__contenedor__item"><img src="../assets/img/logo_horarios.png" alt="Horarios"></div>
+        <div class="pie__contenedor__item">
+          <h4>&nbsp Horario: lunes a sábado de 11:00 a 22:00 &nbsp</h4>
+        </div>
+        <div class="pie__contenedor__item">
+          <a href="https://www.instagram.com/edrinksdistribuidora/"><img class="pie__contenedor__inst"
+              src="../assets/img/LogoInstagram.png" alt="Logo Instagram" align=center></a>
+        </div>
+      </div>
+      <h5>La venta de bebidas alchólicas esta prohibida para menores de 18 años.</h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>
