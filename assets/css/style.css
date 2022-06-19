@@ -8,9 +8,9 @@ h1 {
   color: rgb(117, 182, 151);
   background: linear-gradient(
     90deg,
-    rgba(229, 240, 237, 1) 0%,
-    rgba(250, 251, 247, 1) 100%,
-    rgba(250, 251, 247, 1) 100%
+    rgba(220, 240, 237, 1) 0%,
+    rgba(200, 251, 247, 1) 100%,
+    rgba(200, 251, 247, 1) 100%
   );
   text-align: center;
   font-family: verdana;
@@ -48,14 +48,14 @@ body {
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
-    rgba(122, 162, 94, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
+    rgb(78, 99, 64) 100%,
+    rgb(58, 69, 71) 100%
   );
 }
 
 .encabezado-logo {
   margin: 0.3%;
-}
+} 
 
 .encabezado-logo {
   width: 150px;
@@ -178,9 +178,9 @@ body {
   justify-content: center;
   background: linear-gradient(
     90deg,
-    rgba(229, 240, 237, 1) 0%,
-    rgba(250, 251, 247, 1) 100%,
-    rgba(250, 251, 247, 1) 100%
+    rgba(220, 240, 237, 1) 0%,
+    rgba(200, 251, 247, 1) 100%,
+    rgba(200, 251, 247, 1) 100%
   );
   color: black;
   text-align: center;
@@ -274,9 +274,9 @@ body {
   justify-content: center;
   background: linear-gradient(
     90deg,
-    rgba(229, 240, 237, 1) 0%,
-    rgba(250, 251, 247, 1) 100%,
-    rgba(250, 251, 247, 1) 100%
+    rgba(220, 240, 237, 1) 0%,
+    rgb(133, 179, 175) 100%,
+    rgb(189, 211, 209) 100%
   );
 }
 
@@ -310,9 +310,9 @@ body {
   margin: 0.5%;
   background: linear-gradient(
     90deg,
-    rgba(229, 240, 237, 1) 0%,
-    rgba(250, 251, 247, 1) 100%,
-    rgba(250, 251, 247, 1) 100%
+    rgba(220, 240, 237, 1) 0%,
+    rgba(200, 251, 247, 1) 100%,
+    rgba(200, 251, 247, 1) 100%
   );
   text-align: center;
   font-family: verdana;
@@ -371,14 +371,27 @@ body {
   font-family: verdana;
 }
 
+.img-promo1:hover{
+  transform: scale(1.2) ;  
+}
+
+.img-promo2:hover{
+  transform: scale(1.2) ;  
+}
+
+.img-promo3:hover{
+  transform: scale(1.2) ;  
+}
+
+
 .busqueda-catalogo {
   display: flex;
   justify-content: center;
   background: linear-gradient(
     90deg,
-    rgba(229, 240, 237, 1) 0%,
-    rgba(250, 251, 247, 1) 100%,
-    rgba(250, 251, 247, 1) 100%
+    rgba(220, 240, 237, 1) 0%,
+    rgba(200, 251, 247, 1) 100%,
+    rgba(200, 251, 247, 1) 100%
   );
   margin: 0.5%;
   padding: 2%;
@@ -587,9 +600,9 @@ body {
     justify-content: center;
     background: linear-gradient(
       90deg,
-      rgba(229, 240, 237, 1) 0%,
-      rgba(250, 251, 247, 1) 100%,
-      rgba(250, 251, 247, 1) 100%
+      rgba(220, 240, 237, 1) 0%,
+      rgba(200, 251, 247, 1) 100%,
+      rgba(200, 251, 247, 1) 100%
     );
     color: black;
     text-align: center;
@@ -874,9 +887,9 @@ body {
     justify-content: center;
     background: linear-gradient(
       90deg,
-      rgba(229, 240, 237, 1) 0%,
-      rgba(250, 251, 247, 1) 100%,
-      rgba(250, 251, 247, 1) 100%
+      rgba(220, 240, 237, 1) 0%,
+      rgba(200, 251, 247, 1) 100%,
+      rgba(200, 251, 247, 1) 100%
     );
     color: black;
     text-align: center;
@@ -924,7 +937,7 @@ body {
     height: 200px;
   }
 
-  .imagen-catalogo-1 {
+  .imagen-catalogo-1 {   
     width: 130px;
   }
   .imagen-catalogo-2 {
