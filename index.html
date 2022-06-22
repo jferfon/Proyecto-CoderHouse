@@ -6,74 +6,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Distribuidora Edrinks</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
 
-  <!-- ********************************** ENCABEZADO DE LA PAGINA ******************************************  -->
-  <header>
-    <div class="encabezado">
+  <div class="container-fluid">
 
-      <a href="index.html"><img class="encabezado-logo" data-aos="flip-left" src="assets/img/Logo_eDrinks.png" alt="Logo Edrinks"></a>
+    <!-- ********************************** ENCABEZADO DE LA PAGINA ******************************************  -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light encabezado rounded-3">
+        <div class="container-fluid">
+          <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png"
+              alt="Logo Edrinks"></a>
 
-      <nav class="nav-menu">
-        <ul>
-          <li class="nav-menu__item"><a class="nav-menu__item__link nav-color" href="index.html">Inicio</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="pages/quienesSomos.html">Quienes Somos</a>
-          </li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="pages/promociones.html">Promos</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="pages/catalogo.html">Catálogo</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="pages/contactanos.html">Contactenos</a></li>
-        </ul>
+          <a class="navbar-brand nav-menu__item nav-color" href="index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link nav-menu__item" href="pages/quienesSomos.html">Quienes Somos</a>
+              <a class="nav-link nav-menu__item" href="pages/promociones.html">Promos</a>
+              <a class="nav-link nav-menu__item" href="pages/catalogo.html">Catálogo</a>
+              <a class="nav-link nav-menu__item" href="pages/contactanos.html">Contactenos</a>
+            </div>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
-  <!-- *****************************************************************************************************  -->
+    </header>
+    <!-- *****************************************************************************************************  -->
 
-  <main>
-  
-    <h1>Distribuidora de Bebidas eDrinks</h1>
-    <div class="cuerpo-principal">
-      <img class="imagen-principal" src="assets/img/fondo_eDrinks.png" alt="Fondo Edrinks">
-      <img class="carrito-principal" src="assets/img/carrito.png" alt="Carrito Compra">     
-      <p class="texto-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero qui mollitia voluptates expedita commodi, suscipit amet ea quaerat vero quod numquam sed eius corporis ullam id asperiores assumenda illum incidunt recusandae? Ipsam reprehenderit excepturi asperiores pariatur eligendi provident laudantium quae</p> 
-    </div>
-  </main>
 
-  <!-- ********************************** PIE DE LA PAGINA ******************************************  -->
-  <footer>
-    <div class="pie">
-      <h3>Somos una distribuidora mayorista de bebidas alcohólicas de productos importados y nacionales.</h3>
-      <div class="pie__contenedor">
-        <div class="pie__contenedor__item"><img src="assets/img/logo_dir.png" alt="Direccion"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Dirección: Roque Graseras 848, 11600 Montevideo &nbsp</h4>
-        </div>
-        <div class="pie__contenedor__item"><img src="assets/img/logo_cel.png" alt="Celular"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Celular: 093 305 875 &nbsp</h4>
-        </div>
-        <div class="pie__contenedor__item"><img src="assets/img/logo_horarios.png" alt="Horarios"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Horario: lunes a sábado de 11:00 a 22:00 &nbsp</h4>
-        </div>
-        <div class="pie__contenedor__item">
-          <a href="https://www.instagram.com/edrinksdistribuidora/"><img class="pie__contenedor__inst"
-              src="assets/img/LogoInstagram.png" alt="Logo Instagram" align=center></a>
+    <main>
+      <div class="bg-success p-2 text-dark rounded-3 ">
+        <p class="text-success text-center fs-2 text-white">Distribuidora de Bebidas eDrinks</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-xl-10"> <img class="img-fluid rounded-3 imagen-principal"
+            src="assets/img/fondo_eDrinks.png" alt="Fondo Edrinks"></div>
+        <div class="texto-principal col-12 col-xl-2 ">
+          <p>Lorem ipsum dolor sit amet consecteturd eius corporis ullam id asperiores assumenda illum incidunt
+            recusandae? Ipsam reprehenderit excepturi asperiores pariatur eligendi provident laudantium quae</p>
         </div>
       </div>
-      <h5>La venta de bebidas alchólicas esta prohibida para menores de 18 años.</h5>
+    </main>
+
+    <!-- ********************************** PIE DE LA PAGINA ************************************************************  -->
+
+    <div class="container-fluid border border-3 rounded-3 bg-success p-2 text-dark bg-opacity-10">
+
+
+      <div class="text-success text-center texto-pie-titulo">Somos una distribuidora mayorista de bebidas alcohólicas de productos
+        importados y nacionales.</div>
+
+      <div class="row text-center">
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="assets/img/logo_dir.png" alt="Direccion"> Dirección</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text">Roque Graseras 848, 11600 Montevideo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="assets/img/logo_cel.png" alt="Celular"> Celular</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text">093 305 875</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="assets/img/logo_horarios.png" alt="Horarios"> Horarios</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text"> lunes a sábado de 11:00 a 22:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"><a href="https://www.instagram.com/edrinksdistribuidora/"><img
+                  src="assets/img/LogoInstagram.png" alt="Logo Instagram">Instagram</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-success text-center texto-pie-fin">La venta de bebidas alchólicas esta prohibida para menores de 18 años.
+      </div>
     </div>
-  </footer>
-  <!-- **********************************************************************************************  -->
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    </footer>
+    <!-- **********************************************************************************************  -->
 
+    <!-- JavaScript AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- JavaScript Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>

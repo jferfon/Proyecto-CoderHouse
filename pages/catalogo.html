@@ -5,106 +5,142 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css" />
   <title>Catalogo</title>
 </head>
 
 <body>
-  <header>
-    <div class="encabezado">
-      <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png" alt="Logo Edrinks"></a>
-      <nav class="nav-menu">
-        <ul>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="../index.html">Inicio</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="quienesSomos.html">Quienes
-              Somos</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="promociones.html">Promos</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link nav-color" href="catalogo.html">Catálogo</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="contactanos.html">Contactenos</a>
-          </li>
-        </ul>
+  <div class="container-fluid">
+
+    <!-- ********************************** ENCABEZADO DE LA PAGINA ******************************************  -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light encabezado rounded-3">
+        <div class="container-fluid">
+          <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png"
+              alt="Logo Edrinks"></a>
+
+          <a class="navbar-brand nav-menu__item" href="../index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link nav-menu__item" href="quienesSomos.html">Quienes Somos</a>
+              <a class="nav-link nav-menu__item" href="promociones.html">Promos</a>
+              <a class="nav-link nav-menu__item nav-color" aria-current="page" href="#">Catálogo</a>
+              <a class="nav-link nav-menu__item" href="contactanos.html">Contactenos</a>
+            </div>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
+    <!-- *****************************************************************************************************  -->
 
-  <main>
-    <section>
-      <div class="busqueda-catalogo">
-        <form action="/my-handling-form-page" method="post">
-          <input type="text" name="busqueda-catalogo" placeholder="Busqueda:" required />
-          <input type="submit" value="Buscar" />
-        </form>
+    <main>
+      <section>
+
+        <div class="bg-success p-2 text-dark rounded-3 text-center ">
+          <form action="/my-handling-form-page" method="post">
+            <input class="rounded-3" type="text" name="busqueda-catalogo" placeholder="Ingrese texto busqueda..." required />
+            <button type="button" class="btn btn-success">Buscar...</button>
+          </form>
+        </div>
+        <div class="container border">
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo1.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo2.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo3.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo4.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo5.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo6.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo7.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo8.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo9.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo10.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo11.jpg"
+              alt="Catalogo"></a>
+          <a href="detalle.html"><img class="img-fluid" width="200" height="auto" src="../assets/img/catalogo12.jpg"
+              alt="Catalogo"></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ********************************** PIE DE LA PAGINA ************************************************************  -->
+
+    <div class="container-fluid border border-3 rounded-3 bg-success p-2 text-dark bg-opacity-10">
+
+      <div class="text-success text-center pie-titulo">Somos una distribuidora mayorista de bebidas alcohólicas de productos
+        importados y nacionales.</div>
+
+      <div class="row text-center">
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="../assets/img/logo_dir.png" alt="Direccion"> Dirección</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text">Roque Graseras 848, 11600 Montevideo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="../assets/img/logo_cel.png" alt="Celular"> Celular</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text">093 305 875</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="../assets/img/logo_horarios.png" alt="Horarios"> Horarios</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text"> lunes a sábado de 11:00 a 22:00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"><a href="https://www.instagram.com/edrinksdistribuidora/"><img
+                  src="../assets/img/LogoInstagram.png" alt="Logo Instagram">Instagram</a></div>
+          </div>
+        </div>
       </div>
 
-      <a href="detalle.html">
-        <img class='imagen-catalogo-1' src="../assets/img/catalogo1.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-2' src="../assets/img/catalogo2.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-3' src="../assets/img/catalogo3.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-4' src="../assets/img/catalogo4.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-5' src="../assets/img/catalogo5.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-6' src="../assets/img/catalogo6.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-7' src="../assets/img/catalogo7.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-8' src="../assets/img/catalogo8.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-9' src="../assets/img/catalogo9.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-10' src="../assets/img/catalogo10.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-11' src="../assets/img/catalogo11.jpg" alt="Catalogo">
-      </a>
-      <a href="detalle.html">
-        <img class='imagen-catalogo-12' src="../assets/img/catalogo12.jpg" alt="Catalogo">
-      </a>
-
-    </section>
-  </main>
-
-  <footer>
-    <div class="pie">
-      <h3>Somos una distribuidora mayorista de bebidas alcohólicas de productos importados y nacionales.</h3>
-      <div class="pie__contenedor">
-        <div class="pie__contenedor__item"><img src="../assets/img/logo_dir.png" alt="Direccion"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Dirección: Roque Graseras 848, 11600 Montevideo &nbsp</h4>
-        </div>
-        <div class="pie__contenedor__item"><img src="../assets/img/logo_cel.png" alt="Celular"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Celular: 093 305 875 &nbsp</h4>
-        </div>
-        <div class="pie__contenedor__item"><img src="../assets/img/logo_horarios.png" alt="Horarios"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Horario: lunes a sábado de 11:00 a 22:00 &nbsp</h4>
-        </div>
-        <div class="pie__contenedor__item">
-          <a href="https://www.instagram.com/edrinksdistribuidora/"><img class="pie__contenedor__inst"
-              src="../assets/img/LogoInstagram.png" alt="Logo Instagram" align=center></a>
-        </div>
+      <div class="text-success text-center texto-pie-fin">La venta de bebidas alchólicas esta prohibida para menores de 18 años.
       </div>
-      <h5>La venta de bebidas alchólicas esta prohibida para menores de 18 años.</h5>
     </div>
-  </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
+    </footer>
+    <!-- **********************************************************************************************  -->
+
+    <!-- JavaScript AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- JavaScript Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>

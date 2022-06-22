@@ -5,77 +5,158 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css" />
   <title>Detalle</title>
 </head>
 
 <body>
-  <header>
-    <div class="encabezado">
+  <div class="container-fluid">
+    <!-- ********************************** ENCABEZADO DE LA PAGINA ******************************************  -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light encabezado rounded-3">
+        <div class="container-fluid">
+          <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png"
+              alt="Logo Edrinks"></a>
 
-      <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png" alt="Logo Edrinks"></a>
-      <nav class="nav-menu">
-        <ul>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="../index.html">Inicio</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="quienesSomos.html">Quienes
-              Somos</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="promociones.html">Promos</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="catalogo.html">Catálogo</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__item__link" href="contactanos.html">Contactenos</a>
-          </li>
-        </ul>
+          <a class="navbar-brand nav-menu__item" href="../index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link nav-menu__item" href="quienesSomos.html">Quienes Somos</a>
+              <a class="nav-link nav-menu__item" href="promociones.html">Promos</a>
+              <a class="nav-link nav-menu__item" href="catalogo.html">Catálogo</a>
+              <a class="nav-link nav-menu__item" href="contactanos.html">Contactenos</a>
+            </div>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
+    <!-- *****************************************************************************************************  -->
 
-  <main>
-    <section>
-      <div class="detalle">
+    <main>
+      <section>
 
-        <div class="imagen-detalle">
-          <img class="img-deta" src="../assets/img/DetallePromo.png" alt="Promociones" width="350" height="350">
+        <!-- 
+        <div class="detalle">
+
+          <div class="imagen-detalle">
+            <img class="img-deta" src="../assets/img/DetallePromo.png" alt="Promociones" width="350" height="350">
+          </div>
+
+          <div class="imagen-detalle__texto">
+            <p> Vinos de Lucca, aprovecha la promoción... </p>
+            <p> Llevando 3 botellas te hacemos un precio irresistible. </p>
+            <p> LLevalos por tan solo $ 1000. </p>
+            <p> Vinos de Lucca es elaborados por productos natureles, con uvas seleccionadas. </p>
+          </div>
+        </div>
+       
+
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0 ">
+            <div class="col-md-4">
+              <img src="../assets/img/DetallePromo.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Vinos de Lucca</h5>
+                <p class="card-text">Llevando 3 botellas te hacemos un precio irresistible. Vinos de Lucca es
+                  elaborados por productos natureles, con uvas seleccionadas.</p>
+                <p class="card-text"><small class="text-muted">$U 1500 precio unitario, o 3 por $U 1000</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+         -->
+
+        <div class="container m-3">
+
+              <div class="row">  
+              <div class="col-4"><img src="../assets/img/DetallePromo.png" alt="Promociones" width="350" height="auto" class="img-fluid" ></div>
+              <div class="col-8 text-center d-flex justify-content-center align-items-center text-success imagen-detalle-texto">
+                Vinos de Lucca, aprovecha la promoción... 
+                 Llevando 3 botellas te hacemos un precio irresistible.
+                LLevalos por tan solo $ 1000. 
+                Vinos de Lucca es elaborados por productos naturales, con uvas seleccionadas.</p>
+              </div>
+            </div>
         </div>
 
-        <div class="imagen-detalle__texto">
-          <p> Vinos de Lucca, aprovecha la promoción... </p>
-          <p> Llevando 3 botellas te hacemos un precio irresistible. </p>
-          <p> LLevalos por tan solo $ 1000. </p>
-          <p> Vinos de Lucca es elaborados por productos natureles, con uvas seleccionadas. </p>
-        </div>
-      </div>    
 
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <div class="pie">
-      <h3>Somos una distribuidora mayorista de bebidas alcohólicas de productos importados y nacionales.</h3>
-      <div class="pie__contenedor">
-        <div class="pie__contenedor__item"><img src="../assets/img/logo_dir.png" alt="Direccion"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Dirección: Roque Graseras 848, 11600 Montevideo &nbsp</h4>
+
+    <!-- ********************************** PIE DE LA PAGINA ************************************************************  -->
+
+    <div class="container-fluid border border-3 rounded-3 bg-success p-2 text-dark bg-opacity-10">
+
+
+      <div class="text-success text-center pie-titulo">Somos una distribuidora mayorista de bebidas alcohólicas de productos
+        importados y nacionales.</div>
+
+      <div class="row text-center">
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="../assets/img/logo_dir.png" alt="Direccion"> Dirección</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text">Roque Graseras 848, 11600 Montevideo.</p>
+            </div>
+          </div>
         </div>
-        <div class="pie__contenedor__item"><img src="../assets/img/logo_cel.png" alt="Celular"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Celular: 093 305 875 &nbsp</h4>
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="../assets/img/logo_cel.png" alt="Celular"> Celular</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text">093 305 875</p>
+            </div>
+          </div>
         </div>
-        <div class="pie__contenedor__item"><img src="../assets/img/logo_horarios.png" alt="Horarios"></div>
-        <div class="pie__contenedor__item">
-          <h4>&nbsp Horario: lunes a sábado de 11:00 a 22:00 &nbsp</h4>
+
+        <div class="col-6 col-sm-6 col-md-3">
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"> <img src="../assets/img/logo_horarios.png" alt="Horarios"> Horarios</div>
+            <div class="card-body text-success">
+              <p class="text-success fs-6 card-text"> lunes a sábado de 11:00 a 22:00</p>
+            </div>
+          </div>
         </div>
-        <div class="pie__contenedor__item">
-          <a href="https://www.instagram.com/edrinksdistribuidora/"><img class="pie__contenedor__inst"
-              src="../assets/img/LogoInstagram.png" alt="Logo Instagram" align=center></a>
+
+        <div class="col-6 col-sm-6 col-md-3">
+
+          <div class="card border-0 m-3" style="max-width: 18rem;">
+            <div class="card-header"><a href="https://www.instagram.com/edrinksdistribuidora/"><img
+                  src="../assets/img/LogoInstagram.png" alt="Logo Instagram">Instagram</a></div>
+          </div>
         </div>
       </div>
-      <h5>La venta de bebidas alchólicas esta prohibida para menores de 18 años.</h5>
+
+      <div class="text-success text-center texto-pie-fin">La venta de bebidas alchólicas esta prohibida para menores de 18 años.
+      </div>
     </div>
-  </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
+    </footer>
+    <!-- **********************************************************************************************  -->
+
+    <!-- JavaScript AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- JavaScript Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </div>
 </body>
 
 </html>
