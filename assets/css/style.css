@@ -95,10 +95,10 @@ h5 {
   color: green;
   text-align: center;
   font-family: verdana;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   border-radius: 10px;
-  padding: 6%;
+  padding: 2%;
   margin: 0%;
 }
 /*--------------------------------------------------------------------------------------------------------------------------- */
@@ -110,48 +110,16 @@ h5 {
 }
 /*--------------------------------------------------------------------------------------------------------------------------- */
 
-.box-derecha {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.box-izquiera {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.box-centrar {
-  display: flex;
-  justify-content: center;
-}
-
-.cabezal {
-  background-color: white;
-}
-
-.cabezal__contenedor {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.cabezal__contenedor__item {
-  margin: 3px;
-}
-
-.cuerpo {
-  background-color: white;
-}
-
+/*PAGE CONTACTONOS ---------------------------------------------------------------------------------------------------------- */
 .formulario {
   background: white;
-  width: 100%;
-  height: 400px;
+  width: 100%;  
   margin: 0px;
   padding: 0px;
   font-size: 0px;
-  padding-right: 25%;
-  padding-left: 25%;
+  padding-right: 10%;
+  padding-left: 10%;
   margin: 1%;
 }
 
@@ -195,13 +163,9 @@ h5 {
   margin: 1%;
 }
 
-.mapa {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  margin: 1%;
-}
+/*--------------------------------------------------------------------------------------------------------------------------- */
 
+/*PAGE PROMOCIONES ---------------------------------------------------------------------------------------------------------- */
 .promo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -281,6 +245,44 @@ h5 {
 .img-promo3:hover {
   transform: scale(1.2);
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------- */
+
+
+.box-derecha {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box-izquiera {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box-centrar {
+  display: flex;
+  justify-content: center;
+}
+
+.cabezal {
+  background-color: white;
+}
+
+.cabezal__contenedor {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.cabezal__contenedor__item {
+  margin: 3px;
+}
+
+.cuerpo {
+  background-color: white;
+}
+
+
 
 /*****************************************************************************************************************************************/
 /****************************************** @ entre 576 y 1200 px     ********************************************************************/
@@ -450,11 +452,11 @@ h5 {
   /*--------------------------------------------------------------------------------------------------------------------------- */
   /*FOOTER-entre 576 y 1200 px------------------------------------------------------------------------------------- */
   .texto-pie-titulo {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .texto-pie-fin {
-    font-size: 8px;
+    font-size: 10px;
   }
   /*----------------------------------------------------------------------------------------------------- */
 
@@ -527,7 +529,7 @@ h5 {
 
   /*PAGE QUIENESSOMOS-------------------------------------------------------------------------------------------------------------- */
   .texto-quienes-somos {
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 10px;
     padding: 0%;
     margin: 0%;
