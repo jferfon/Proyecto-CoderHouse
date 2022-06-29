@@ -1,0 +1,30 @@
+/*FOOTER-------------------------------------------------------------------------------------------------------------------- */
+.texto-pie-titulo {
+    font-size: 26px;
+}
+
+.texto-pie-fin {
+    font-size: 14px;
+    color: $colorTextoSecundario;
+}
+
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .texto-pie-titulo {
+        font-size: 20px;
+    }
+
+    .texto-pie-fin {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .texto-pie-titulo {
+        font-size: 16px;
+    }
+
+    .texto-pie-fin {
+        font-size: 10px;
+    }
+}

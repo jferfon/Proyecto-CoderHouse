@@ -1,0 +1,33 @@
+/*HEADER ------------------------------------------------------------------------------------------------------------------- */
+.encabezado {
+  background: $colorPrimario;
+}
+
+.encabezado-logo {
+  padding-right: 3%;
+  width: 150px;
+}
+
+.nav-menu__item {
+  color: white;
+  font-size: 26px;
+  font-family: $fontPrimario;
+}
+
+.nav-color {
+  color: $colorSeleccionItem;
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .encabezado-logo {
+    width: 100px;
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+  .encabezado-logo {
+    width: 80px;
+  }
+}

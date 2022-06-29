@@ -1,0 +1,29 @@
+.texto-quienes-somos {
+    font-family: $fontPrimario;
+    font-size: 18px;
+    justify-content: center;
+    background: $colorSecundario;
+    color: $colorTextoPrimario;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 0%;
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+    .texto-quienes-somos {
+        font-size: 16px;
+        padding: 0%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+    .texto-quienes-somos {
+        font-size: 14px;
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------- */

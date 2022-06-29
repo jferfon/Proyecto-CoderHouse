@@ -46,8 +46,10 @@
         <div class="bg-success p-2 text-dark rounded-3 text-center ">
           <form action="/my-handling-form-page" method="post">
             <input class="rounded-3" type="text" name="busqueda-catalogo" placeholder="Ingrese texto busqueda..."
-              required />
-            <button type="button" class="btn btn-success">Buscar...</button>
+              required data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+              title="Ingrese bebida a buscar...">
+
+            <button type="button" class="btn btn-success btn-secondary">Buscar...</button>
           </form>
         </div>
         <div class="container border">

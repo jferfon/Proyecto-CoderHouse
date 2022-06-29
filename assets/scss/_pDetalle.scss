@@ -1,0 +1,23 @@
+/*PAGE DETALLE--------------------------------------------------------------------------------------------------------------- */
+
+.imagen-detalle-texto {
+  font-size: 25px;
+}
+
+
+@media (min-width: 576px) and (max-width: 1200px) {
+
+  .imagen-detalle-texto {
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+  .imagen-detalle-texto {
+    font-size: 14px;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------- */
