@@ -1,0 +1,67 @@
+/* MAPS */
+$botones: (
+    buscar: $colorBtnBuscar,
+    formulario: $colorBtnForm
+);
+
+@each $btn_tipo,
+$btn_color in $botones {
+    .btn--#{$btn_tipo} {
+        background-color: $btn_color;
+        border-color: $colorBtnBorder;
+        border-radius: 10%;
+    }
+}
+
+/*MAP - GET() */
+$estilo-1: (
+    color: green,
+    fuente:verdana,
+    color-fondo: #d9f3d2,
+    alineacion: center,
+    estilo: italic
+);
+
+$estilo-2: (
+    color: green,
+    fuente:verdana,
+    color-fondo: #c7ffed,
+    alineacion: center
+);
+
+
+/*EACH */
+@each $color in green white black {
+    .#{$color} {
+        color:#{$color};
+    }
+}
+
+/*EACH */
+@each $color in green white black {
+    .#{$color} {
+        color:#{$color};
+    }
+}
+
+/*FOR */
+@for $i from 1 through 12 {
+
+    .imagen-catalogo#{$i}:hover {
+
+        @if $i < 6 {
+            transform: scale(1.2);
+        }
+
+        @else {
+            transform: scale(1.5);
+        }
+
+    }
+}
+
+/*MIXIN */
+@mixin tamaño ($ancho, $alto) {
+    width: $ancho ;
+    height: $alto;
+}

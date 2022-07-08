@@ -1,17 +1,21 @@
 $colorPrimario: linear-gradient(90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(78, 99, 64) 100%,
-    rgb(58, 69, 71) 100%);
+        rgba(2, 0, 36, 1) 0%,
+        rgb(78, 99, 64) 100%,
+        rgb(58, 69, 71) 100%);
 
 $colorSecundario: linear-gradient(90deg,
-    rgba(220, 240, 237, 1) 0%,
-    rgb(238, 243, 243) 100%,
-    rgb(224, 232, 231) 100%);
+        rgba(220, 240, 237, 1) 0%,
+        rgb(219, 239, 225) 100%,
+        rgb(224, 232, 228) 100%);
 
 $colorSeleccionItem: red;
 
 $colorTextoPrimario: green;
 
-$colorTextoSecundario: rgb(117, 182, 151);
+$colorTextoSecundario: rgb(207, 237, 222);
+
+$colorBtnForm: rgb(222, 237, 229);
+$colorBtnBuscar: rgb(177, 185, 173);
+$colorBtnBorder: rgb(216, 234, 216);
 
 $fontPrimario: verdana;

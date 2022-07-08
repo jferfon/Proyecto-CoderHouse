@@ -1,4 +1,16 @@
 /*PAGE CONTACTONOS ---------------------------------------------------------------------------------------------------------- */
+
+.caja {
+  margin: 0%;
+  padding: 1%;
+  border: solid white;
+  background: $colorSecundario;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+}
+
+
 .formulario {
   background: white;
   width: 100%;
@@ -10,25 +22,15 @@
 }
 
 .formulario__item {
-  margin: 0%;
-  padding: 1%;
-  border: solid white;
-  background: $colorSecundario;
-  display: inline-block;
-  width: 100%;
+  @extend .caja;
   height: 60px;
-  font-size: 20px;
+
 }
 
 .formulario__item-mensaje {
-  margin: 0%;
-  padding: 1%;
-  border: solid white;
-  background: $colorSecundario;
-  display: inline-block;
-  width: 100%;
+  @extend .caja;
   height: 150px;
-  font-size: 20px;
+
 }
 
 .form-boton {
