@@ -1,6 +1,8 @@
 /*HEADER ------------------------------------------------------------------------------------------------------------------- */
 .encabezado {
   background: $colorPrimario;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
 }
 
 .encabezado-logo {
@@ -19,9 +21,21 @@
   color: $colorSeleccionItem;
 }
 
+.logo-botella {
+  @include tamaño(100px, auto);
+
+}
+
+
+
 @media (min-width: 576px) and (max-width: 1200px) {
   .encabezado-logo {
-    width: 100px;
+    width: 150px;
+  }
+
+  .logo-botella {
+    @include tamaño(80px, auto);
+
   }
 
 }
@@ -29,6 +43,11 @@
 @media (min-width: 0px) and (max-width: 576px) {
 
   .encabezado-logo {
-    width: 80px;
+    width: 110px;
+  }
+
+  .logo-botella {
+    @include tamaño(60px, auto);
+
   }
 }

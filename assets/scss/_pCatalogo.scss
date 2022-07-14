@@ -3,6 +3,20 @@
 .imagen-catalogo {
   @include tamaño(200px, auto);
   margin: 0%;
-  padding: 0.1%;
+  padding: 0.8%;
+  border-radius: 5%;
 
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .imagen-catalogo {
+    @include tamaño(180px, auto);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+  .imagen-catalogo {
+    @include tamaño(150px, auto);
+  }
 }

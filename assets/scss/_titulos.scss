@@ -1,10 +1,11 @@
 h1 {
 
   /* color: $colorTextoSecundario;*/
-  @extend .white;
+  @extend .orange;
   text-align: center;
   font-family: $fontPrimario;
   font-size: 36px;
+  padding-bottom: 1%;
 }
 
 h2 {

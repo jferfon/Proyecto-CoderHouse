@@ -1,14 +1,12 @@
-$colorPrimario: linear-gradient(90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgb(78, 99, 64) 100%,
-        rgb(58, 69, 71) 100%);
+$colorPrimario: linear-gradient(90deg, rgba(47, 52, 46, 1) 30%, rgba(52, 106, 78, 0.6001751042213761) 91%);
+
 
 $colorSecundario: linear-gradient(90deg,
-        rgba(220, 240, 237, 1) 0%,
-        rgb(219, 239, 225) 100%,
-        rgb(224, 232, 228) 100%);
+                rgba(220, 240, 237, 1) 0%,
+                rgb(117, 155, 129) 100%,
+                rgb(224, 232, 228) 100%);
 
-$colorSeleccionItem: red;
+$colorSeleccionItem: orange;
 
 $colorTextoPrimario: green;
 

@@ -13,11 +13,19 @@ $btn_color in $botones {
     }
 }
 
+/*----------------------------------------------------------------*/
+
+.fondo {
+    background: $colorPrimario;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
 /*MAP - GET() */
 $estilo-1: (
     color: green,
     fuente:verdana,
-    color-fondo: #d9f3d2,
+    color-fondo: #eaf6e6,
     alineacion: center,
     estilo: italic
 );
@@ -25,20 +33,21 @@ $estilo-1: (
 $estilo-2: (
     color: green,
     fuente:verdana,
-    color-fondo: #c7ffed,
+    color-fondo: #eff3f2,
     alineacion: center
 );
+/*----------------------------------------------------------------*/
 
 
 /*EACH */
-@each $color in green white black {
+@each $color in green white black red black orange {
     .#{$color} {
         color:#{$color};
     }
 }
 
 /*EACH */
-@each $color in green white black {
+@each $color in green white black grey {
     .#{$color} {
         color:#{$color};
     }
@@ -60,8 +69,12 @@ $estilo-2: (
     }
 }
 
+/*----------------------------------------------------------------*/
+
 /*MIXIN */
 @mixin tamaño ($ancho, $alto) {
     width: $ancho ;
     height: $alto;
 }
+
+/*----------------------------------------------------------------*/

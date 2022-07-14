@@ -17,13 +17,21 @@
   border-radius: 10%;
 }
 
+/*----------------------------------------------------------------*/
+.fondo {
+  background: linear-gradient(90deg, rgb(47, 52, 46) 30%, rgba(52, 106, 78, 0.6001751042) 91%);
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
 /*MAP - GET() */
+/*----------------------------------------------------------------*/
 /*EACH */
 .green {
   color: green;
 }
 
-.white, h1 {
+.white, .texto-quienes-somos {
   color: white;
 }
 
@@ -31,17 +39,33 @@
   color: black;
 }
 
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.orange, h1 {
+  color: orange;
+}
+
 /*EACH */
 .green {
   color: green;
 }
 
-.white, h1 {
+.white, .texto-quienes-somos {
   color: white;
 }
 
 .black {
   color: black;
+}
+
+.grey {
+  color: grey;
 }
 
 /*FOR */
@@ -93,12 +117,15 @@
   transform: scale(1.5);
 }
 
+/*----------------------------------------------------------------*/
 /*MIXIN */
+/*----------------------------------------------------------------*/
 h1 {
   /* color: $colorTextoSecundario;*/
   text-align: center;
   font-family: verdana;
   font-size: 36px;
+  padding-bottom: 1%;
 }
 
 h2 {
@@ -114,7 +141,6 @@ h2 {
   h1 {
     font-size: 30px;
   }
-
   h2 {
     font-size: 14px;
     text-align: center;
@@ -124,7 +150,6 @@ h2 {
   h1 {
     font-size: 24px;
   }
-
   h2 {
     font-size: 12px;
     text-align: center;
@@ -132,7 +157,9 @@ h2 {
 }
 /*HEADER ------------------------------------------------------------------------------------------------------------------- */
 .encabezado {
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(78, 99, 64) 100%, rgb(58, 69, 71) 100%);
+  background: linear-gradient(90deg, rgb(47, 52, 46) 30%, rgba(52, 106, 78, 0.6001751042) 91%);
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
 }
 
 .encabezado-logo {
@@ -147,17 +174,30 @@ h2 {
 }
 
 .nav-color {
-  color: red;
+  color: orange;
+}
+
+.logo-botella {
+  width: 100px;
+  height: auto;
 }
 
 @media (min-width: 576px) and (max-width: 1200px) {
   .encabezado-logo {
-    width: 100px;
+    width: 150px;
+  }
+  .logo-botella {
+    width: 80px;
+    height: auto;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
   .encabezado-logo {
-    width: 80px;
+    width: 110px;
+  }
+  .logo-botella {
+    width: 60px;
+    height: auto;
   }
 }
 /*PAGE INDEX --------------------------------------------------------------------------------------------------------------- */
@@ -178,13 +218,11 @@ h2 {
 }
 .texto-quienes-somos {
   font-family: verdana;
-  font-size: 18px;
+  font-size: 22px;
   justify-content: center;
-  background: linear-gradient(90deg, rgb(220, 240, 237) 0%, rgb(219, 239, 225) 100%, rgb(224, 232, 228) 100%);
-  color: green;
+  background: linear-gradient(90deg, rgb(47, 52, 46) 30%, rgba(52, 106, 78, 0.6001751042) 91%);
   text-align: center;
   width: 100%;
-  border-radius: 10px;
   padding: 2%;
   margin: 0%;
 }
@@ -213,43 +251,41 @@ h2 {
 
 .promo__titulo {
   grid-area: promo__titulo;
-  border-radius: 10px;
 }
 
 .promo__1 {
   grid-area: promo__1;
   border: 3px solid rgb(227, 242, 235);
-  border-radius: 10px;
-  background-color: #c7ffed;
+  border-radius: 6%;
   margin: 0.5%;
   font-size: 16px;
   font-family: verdana;
   color: green;
-  background-color: #c7ffed;
+  background-color: #eff3f2;
   text-align: center;
 }
 
 .promo__2 {
   grid-area: promo__2;
   border: 3px solid rgb(227, 242, 235);
-  border-radius: 10px;
+  border-radius: 6%;
   margin: 0.5%;
   font-size: 16px;
   font-family: verdana;
   color: green;
-  background-color: #d9f3d2;
+  background-color: #eaf6e6;
   text-align: center;
 }
 
 .promo__3 {
   grid-area: promo__3;
   border: 3px solid rgb(227, 242, 235);
-  border-radius: 10px;
+  border-radius: 6%;
   margin: 0.5%;
   font-size: 16px;
   font-family: verdana;
   color: green;
-  background-color: #c7ffed;
+  background-color: #eff3f2;
   text-align: center;
 }
 
@@ -284,27 +320,22 @@ h2 {
     grid-template-rows: 1fr;
     grid-template-areas: "promo__titulo" "promo__1" "promo__2" "promo__3" "promo__pie";
   }
-
   .promo__titulo {
     grid-area: promo__titulo;
     border-radius: 5px;
   }
-
   .promo__1 {
     grid-area: promo__1;
     font-size: 14px;
   }
-
   .promo__2 {
     grid-area: promo__2;
     font-size: 14px;
   }
-
   .promo__3 {
     grid-area: promo__3;
     font-size: 14px;
   }
-
   .promo__pie {
     grid-area: promo__pie;
     font-size: 14px;
@@ -317,27 +348,22 @@ h2 {
     grid-template-rows: 1fr;
     grid-template-areas: "promo__titulo" "promo__1" "promo__2" "promo__3" "promo__pie";
   }
-
   .promo__titulo {
     grid-area: promo__titulo;
     border-radius: 5px;
   }
-
   .promo__1 {
     grid-area: promo__1;
     font-size: 12px;
   }
-
   .promo__2 {
     grid-area: promo__2;
     font-size: 12px;
   }
-
   .promo__3 {
     grid-area: promo__3;
     font-size: 12px;
   }
-
   .promo__pie {
     grid-area: promo__pie;
     font-size: 12px;
@@ -349,22 +375,51 @@ h2 {
   width: 200px;
   height: auto;
   margin: 0%;
-  padding: 0.1%;
+  padding: 0.8%;
+  border-radius: 5%;
 }
 
+@media (min-width: 576px) and (max-width: 1200px) {
+  .imagen-catalogo {
+    width: 180px;
+    height: auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .imagen-catalogo {
+    width: 150px;
+    height: auto;
+  }
+}
 /*PAGE DETALLE--------------------------------------------------------------------------------------------------------------- */
 .imagen-detalle-texto {
   font-size: 25px;
+}
+
+.imagen-detalle {
+  width: 350px;
+  height: auto;
+  margin: 0%;
+  padding: 0.8%;
+  border-radius: 10%;
 }
 
 @media (min-width: 576px) and (max-width: 1200px) {
   .imagen-detalle-texto {
     font-size: 18px;
   }
+  .imagen-detalle {
+    width: 300px;
+    height: auto;
+  }
 }
 @media (min-width: 0px) and (max-width: 576px) {
   .imagen-detalle-texto {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .imagen-detalle {
+    width: 250px;
+    height: auto;
   }
 }
 /*--------------------------------------------------------------------------------------------------------------------------- */
@@ -373,7 +428,7 @@ h2 {
   margin: 0%;
   padding: 1%;
   border: solid white;
-  background: linear-gradient(90deg, rgb(220, 240, 237) 0%, rgb(219, 239, 225) 100%, rgb(224, 232, 228) 100%);
+  background: linear-gradient(90deg, rgb(220, 240, 237) 0%, rgb(117, 155, 129) 100%, rgb(224, 232, 228) 100%);
   display: inline-block;
   width: 100%;
   font-size: 20px;
@@ -400,7 +455,7 @@ h2 {
 .form-boton {
   display: flex;
   justify-content: center;
-  background: linear-gradient(90deg, rgb(220, 240, 237) 0%, rgb(219, 239, 225) 100%, rgb(224, 232, 228) 100%);
+  background: linear-gradient(90deg, rgb(220, 240, 237) 0%, rgb(117, 155, 129) 100%, rgb(224, 232, 228) 100%);
 }
 
 .form-boton__item {
@@ -414,11 +469,9 @@ h2 {
   .formulario__item {
     font-size: 16px;
   }
-
   .formulario__item-mensaje {
     font-size: 16px;
   }
-
   .form-boton__item {
     font-size: 14px;
   }
@@ -427,11 +480,9 @@ h2 {
   .formulario__item {
     font-size: 14px;
   }
-
   .formulario__item-mensaje {
     font-size: 14px;
   }
-
   .form-boton__item {
     font-size: 12px;
   }
@@ -450,7 +501,6 @@ h2 {
   .texto-pie-titulo {
     font-size: 20px;
   }
-
   .texto-pie-fin {
     font-size: 12px;
   }
@@ -459,7 +509,6 @@ h2 {
   .texto-pie-titulo {
     font-size: 16px;
   }
-
   .texto-pie-fin {
     font-size: 10px;
   }

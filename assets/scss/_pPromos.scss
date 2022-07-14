@@ -11,14 +11,12 @@
 
 .promo__titulo {
   grid-area: promo__titulo;
-  border-radius: 10px;
 }
 
 .promo__1 {
   grid-area: promo__1;
   border: 3px solid rgb(227, 242, 235);
-  border-radius: 10px;
-  background-color: #c7ffed;
+  border-radius: 6%;
   margin: 0.5%;
   font-size: 16px;
 
@@ -31,7 +29,7 @@
 .promo__2 {
   grid-area: promo__2;
   border: 3px solid rgb(227, 242, 235);
-  border-radius: 10px;
+  border-radius: 6%;
   margin: 0.5%;
   font-size: 16px;
 
@@ -44,7 +42,7 @@
 .promo__3 {
   grid-area: promo__3;
   border: 3px solid rgb(227, 242, 235);
-  border-radius: 10px;
+  border-radius: 6%;
   margin: 0.5%;
   font-size: 16px;
 
@@ -52,6 +50,7 @@
   color: map-get($estilo-2, color);
   background-color: map-get($estilo-2, color-fondo);
   text-align: map-get($estilo-2, alineacion);
+
 }
 
 
