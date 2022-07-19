@@ -14,76 +14,68 @@
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
-<body>
-  <div class="container-fluid">
-
-    <!-- ********************************** ENCABEZADO DE LA PAGINA ******************************************  -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light encabezado">
-        <div class="container-fluid">
-          <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png"
-              alt="Logo Edrinks"></a>
-
-          <a class="navbar-brand nav-menu__item" href="../index.html">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link nav-menu__item" href="quienesSomos.html">Quienes Somos</a>
-              <a class="nav-link nav-menu__item" href="promociones.html">Promos</a>
-              <a class="nav-link nav-menu__item" href="catalogo.html">Catálogo</a>
-              <a class="nav-link nav-menu__item nav-color" aria-current="page" href="#">Contactenos</a>
-            </div>
+<body class="container-fluid scrolls">
+  <!-- ********************************** ENCABEZADO DE LA PAGINA ******************************************  -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light encabezado">
+      <div class="container-fluid">
+        <a href="../index.html"><img class="encabezado-logo" data-aos="flip-left" src="../assets/img/Logo_eDrinks.png"
+            alt="Logo Edrinks"></a>
+        <a class="navbar-brand nav-menu__item" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link nav-menu__item" href="quienesSomos.html">Quienes Somos</a>
+            <a class="nav-link nav-menu__item" href="promociones.html">Promos</a>
+            <a class="nav-link nav-menu__item" href="catalogo.html">Catálogo</a>
+            <a class="nav-link nav-menu__item nav-color" aria-current="page" href="#">Contactenos</a>
           </div>
-          <div> <img src="../assets/img/botella.gif" alt="Bebida" class="logo-botella"></div>
         </div>
-      </nav>
-    </header>
-    <!-- *****************************************************************************************************  -->
+        <div> <img src="../assets/img/botella.gif" alt="Bebida" class="logo-botella"></div>
+      </div>
+    </nav>
+  </header>
+  <!-- *****************************************************************************************************  -->
 
-    <main>
-
-      <section>
-        <div class="fondo">
-          <h1>Contactenos</h1>
+  <main>
+    <section>
+      <div class="fondo">
+        <h1>Contactenos</h1>
+      </div>
+      <form action="/my-handling-form-page" method="post">
+        <div class="formulario">
+          <div>
+            <input class="formulario__item" type="text" name="nombre" placeholder="Nombre:" required />
+            <input class="formulario__item" type="number" name="Telefono" placeholder="Teléfono:" />
+            <input class="formulario__item" type="email" name="mail" placeholder="Mail:" required />
+            <input class="formulario__item" type="text" name="asunto" placeholder="Asunto:" required />
+            <textarea class="formulario__item-mensaje" type="text" name="mensaje" placeholder="Mensaje:"
+              required /></textarea>
+          </div>
         </div>
-        <form action="/my-handling-form-page" method="post">
-          <div class="formulario container-fluid">
-            <div>
-              <input class="formulario__item" type="text" name="nombre" placeholder="Nombre:" required />
-              <input class="formulario__item" type="number" name="Telefono" placeholder="Teléfono:" />
-              <input class="formulario__item" type="email" name="mail" placeholder="Mail:" required />
-              <input class="formulario__item" type="text" name="asunto" placeholder="Asunto:" required />
-              <textarea class="formulario__item-mensaje" type="text" name="mensaje" placeholder="Mensaje:"
-                required /></textarea>
-            </div>
-          </div>
 
-          <div class="form-boton">
-            <input class="form-boton__item btn--formulario" class="formulario__boton" type="submit"
-              value="Enviar formulario" />
-            <input class="form-boton__item btn--formulario" type="reset" value="Limpiar formulario" />
-            <input class="form-boton__item btn--formulario" type="button" value="Enviar" />
-          </div>
-        </form>
+        <div class="form-boton">
+          <input class="form-boton__item btn--formulario" class="formulario__boton" type="submit"
+            value="Enviar formulario" />
+          <input class="form-boton__item btn--formulario" type="reset" value="Limpiar formulario" />
+          <input class="form-boton__item btn--formulario" type="button" value="Enviar" />
+        </div>
+      </form>
+    </section>
+  </main>
 
-      </section>
-
-    </main>
-
-    <!-- ********************************** PIE DE LA PAGINA ************************************************************  -->
-
-    <div class="container-fluid border border-3 rounded-3 p-2 m-2">
-
-
+  <!-- ********************************** PIE DE LA PAGINA ************************************************************  -->
+  <footer>
+    <div class="container-fluid border border-3 rounded-3 p-2 mt-2 mb-2">
       <div class="text-success text-center texto-pie-titulo">Somos una distribuidora mayorista de bebidas alcohólicas de
         productos
-        importados y nacionales.</div>
+        importados y nacionales.
+      </div>
 
       <div class="row text-center">
-
         <div class="col-12 col-sm-6 col-md-3">
           <div class="mx-auto d-block card border-0 m-3" style="max-width: 20rem;">
             <div> <img src="../assets/img/logo_dir.png" alt="Direccion"> Dirección</div>
@@ -112,33 +104,30 @@
         </div>
 
         <div class="col-12 col-sm-6 col-md-3">
-
           <div class="mx-auto d-block card border-0 m-3" style="max-width: 15rem;">
             <div><a href="https://www.instagram.com/edrinksdistribuidora/"><img src="../assets/img/LogoInstagram.png"
-                  alt="Logo Instagram">Instagram</a></div>
+                  alt="Logo Instagram"></a></div>
           </div>
         </div>
       </div>
 
       <div class="text-success text-center texto-pie-fin">La venta de bebidas alchólicas esta prohibida para menores de
-        18 años.
-      </div>
+        18 años.</div>
     </div>
+  </footer>
+  <!-- **********************************************************************************************  -->
 
-    </footer>
-    <!-- **********************************************************************************************  -->
+  <!-- JavaScript AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-    <!-- JavaScript AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <!-- JavaScript Boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
-    <!-- JavaScript Boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
-  </div>
 </body>
 
 </html>

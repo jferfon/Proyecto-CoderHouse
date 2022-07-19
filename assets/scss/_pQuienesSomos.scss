@@ -1,9 +1,8 @@
 .texto-quienes-somos {
     font-family: $fontPrimario;
-    font-size: 22px;
-    justify-content: center;
-    background: $colorPrimario;
-    @extend .white;
+    font-size: 20px;
+    background: $colorSecundario;
+    @extend .black;
     text-align: center;
     width: 100%;
     padding: 2%;
@@ -24,5 +23,3 @@
         margin: 0%;
     }
 }
-
-/*-------------------------------------------------------------------------------------------------------------------------------- */

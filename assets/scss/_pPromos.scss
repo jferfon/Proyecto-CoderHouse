@@ -65,7 +65,6 @@
   font-style: map-get($estilo-1 , estilo);
   color: map-get($estilo-1, color);
   text-align: map-get($estilo-1, alineacion);
-
 }
 
 .img-promo1:hover {
@@ -162,7 +161,6 @@
     grid-area: promo__pie;
     font-size: 12px;
   }
-
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------- */

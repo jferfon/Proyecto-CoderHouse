@@ -40,14 +40,7 @@ $estilo-2: (
 
 
 /*EACH */
-@each $color in green white black red black orange {
-    .#{$color} {
-        color:#{$color};
-    }
-}
-
-/*EACH */
-@each $color in green white black grey {
+@each $color in green white black red black orange grey {
     .#{$color} {
         color:#{$color};
     }
@@ -58,12 +51,12 @@ $estilo-2: (
 
     .imagen-catalogo#{$i}:hover {
 
-        @if $i < 6 {
+        @if $i < 7 {
             transform: scale(1.2);
         }
 
         @else {
-            transform: scale(1.5);
+            transform: scale(1.1);
         }
 
     }

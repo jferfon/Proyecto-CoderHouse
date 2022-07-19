@@ -8,7 +8,6 @@
 .encabezado-logo {
   padding-right: 2%;
   width: 150px;
-
 }
 
 .nav-menu__item {
@@ -23,7 +22,6 @@
 
 .logo-botella {
   @include tamaño(100px, auto);
-
 }
 
 
@@ -35,7 +33,6 @@
 
   .logo-botella {
     @include tamaño(80px, auto);
-
   }
 
 }
@@ -48,6 +45,5 @@
 
   .logo-botella {
     @include tamaño(60px, auto);
-
   }
 }
